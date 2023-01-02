@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav&display=swap');
+
+@media only screen and (max-width: 1999px) {
+    
+    .items-menu ul {
+        margin-left: 5vw;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .items-menu ul {
+        margin-left: -5vw;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .logo {
+        margin-left: -5vw;
+    }
+
+    .mobile-header {
+        display: block;
+    }
+
+    .mobile-header i {
+        position: absolute;
+        margin-top: -35px;
+        margin-left: 75vw;
+        font-size: 18px;
+        color: rgb(108, 153, 221);
+    }
+
+    .duvida-item i {
+        margin-left: -65vw;
+    }
+
+    .a-text a{
+        border-radius: 20px;
+        background-color: #fff;
+        padding: 10px;
+    }
+
+    .hidden-mobile {
+        height: 195px;
+    }
+
+    .items-menu-hidden {
+        display: none;
+    }
+
+    .items-menu-mobile {
+        display: grid;
+    }
+
+    .items-menu-mobile li{
+        margin-top: 6px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .duvida p {
+        padding: 0 1rem 0 1rem;
+    }
+
+}

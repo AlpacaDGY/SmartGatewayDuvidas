@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@400&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+}
+
+p, h1, h2 {
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.main-header {
+    width: 100%;
+    height: 75px;
+    background-color: #fff;
+    color: #555;
+    position: fixed;
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: .1s;
+}
+
+.container {
+    /*flex-direction: row;*/
+    padding: 12px 0 12px 10px;
+}
+
+.logo {
+    max-width: 250px;
+    align-items: center;
+}
+
+.logo a {
+    padding: 0 15px;
+    position: relative;
+    color: inherit;
+}
+
+.logo img {
+    width: auto;
+    max-height: 50px;
+    z-index: 5;
+    transition: .65s;
+}
+
+.logo img:hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.items-menu ul {
+    justify-content:end;
+    margin-top: 15px;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 14px;
+    margin-left: 10vw;
+}
+
+.items-menu li{
+    display: inline;
+    margin-left: 2rem;
+}
+
+.items-menu li a{
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.items-menu li a:hover{
+    color: #446daf;
+}
+
+.items-menu .main-a{
+    color: #1752b2;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.items-menu .main-a:hover{
+    color: #88aae0
+}
+
+.header-image {
+    background: rgba(47, 149, 207, 0.8);
+    z-index: 3;
+    overflow: hidden;
+}
+
+.text-main {
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+    text-align: center;
+    margin-top: 260px;
+}
+
+.header-image h1{
+    color: white;
+    z-index: 4;
+    transition: 1s;
+}
+
+.header-image h1:hover {
+    color: rgb(255, 244, 244);
+    font-size: 45px;
+}
+
+.header-image img{
+    background-image: url('/image/duvida.png');
+    min-width: 100%;
+    width: 100%;
+    min-height: 445px;
+    max-height: 445px;
+    opacity: 0.15;
+    z-index: 3;
+    margin-top: 75px;
+}
+
+/* Section */
+
+section {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color: rgb(255, 255, 255)
+}
+
+.main-body {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+.main-body h2 {
+    color: #050A24;
+    font-size: 46px;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+.head-text {
+    padding-top: 50px;
+
+}
+
+.main-body .main-hr {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 50%;
+    border-top: 2px solid black;
+}
+
+.hr-duvida1, .hr-duvida2 {
+    border-top: solid rgb(182, 182, 182) 1px;
+}
+
+.hr-duvida1 {
+    margin-bottom: -1px;
+    margin-top: 50px;
+}
+
+.hr-duvida2 {
+    margin-top: -10px;
+}
+
+.duvida-item {
+    transition: 1s;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.duvida-item p{
+    margin-top: -1.65rem;
+    text-align: left;
+    margin-left: 15vw;
+}
+
+.duvida-item i{
+    font-size: 25px;
+    margin-left: -10rem;
+    z-index: 5;
+}
+
+.duvida-item:hover{
+    background-color: rgba(118, 180, 216, 0.8);
+}
+
+.duvida {
+    margin-top: 50px;
+    transition: 1s;
+}
+
+.duvida p {
+    padding: 0 10rem 0 10rem;
+    text-align: center;
+    margin-left: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer */
+
+.footer-main {
+    width: 100%;
+    position: relative;
+    background-color: rgb(2, 38, 64);
+    margin-top: 3.5rem;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+}
+
+.footer-main img {
+    width: 12%;
+    height: 12%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-main p {
+    color: #fff;
+    padding: 15px 5rem 15px 5rem;
+}
+
+.footer-main a {
+    color: rgb(48, 116, 241);
+    font-weight:bold;
+    transition: 1s;
+}
+
+.footer-main a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.a-text {
+    padding: 20px;
+}
+
+.info {
+    justify-content:center;
+    text-align: center;
+}
+
+.black {
+    background-color: rgb(47,47,47);
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.black p {
+    padding: 20px 0 20px 0
+}
+
+
+/* Mobile */
+
+.mobile-header {
+    display: none;
+}
