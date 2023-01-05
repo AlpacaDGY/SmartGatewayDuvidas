@@ -367,7 +367,7 @@
 
                 <div class="black">
 
-                    <p>SmartGateway Beyond The Security® <span id='year'></span></p>
+                    <p>SmartGateway Beyond The Security® <span id="date"></span></p>
 
                 </div>
 
@@ -380,7 +380,8 @@
 
             $(document).ready(function(){
                 
-                document.getElementById('year').innerHTML = y;
+                var dateObject = document.getElementById("date");
+                if (dateObject) dateObject.innerHTML = y;
                 
                 $("#duvida1").on('click',function(){
 
