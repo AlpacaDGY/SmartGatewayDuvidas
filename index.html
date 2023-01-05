@@ -367,7 +367,7 @@
 
                 <div class="black">
 
-                    <p>SmartGateway Beyond The Security® 2022</p>
+                    <p>SmartGateway Beyond The Security® <span id='year'></span></p>
 
                 </div>
 
@@ -379,6 +379,9 @@
         <script>
 
             $(document).ready(function(){
+                
+                document.getElementById('year').innerHTML = y;
+                
                 $("#duvida1").on('click',function(){
 
                     if ($("#duvida1msg").hasClass("hidden")) {
