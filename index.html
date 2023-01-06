@@ -76,7 +76,7 @@
 
 <!------------------------------------------------  4G ------------------------------------------------------------>
 
-                <div class="duvida-item" id="duvida1"> <!---->
+                <div class="duvida-item" id="1"> <!---->
                     <hr class="hr-duvida1">
 
                     <div class="container">
@@ -103,7 +103,7 @@
 
 <!----------------------------------------------------------------------------------------------------------->
 
-                <div class="duvida-item" id="duvida2"> <!---->
+                <div class="duvida-item" id="2"> <!---->
                     <hr class="hr-duvida1">
 
                     <div class="container">
@@ -128,7 +128,7 @@
 
 <!------------------------------------------------------------------------------------------------------------------>                
                 
-                <div class="duvida-item" id="duvida3"> <!---->
+                <div class="duvida-item" id="3"> <!---->
                     <hr class="hr-duvida1">
 
                     <div class="container">
@@ -154,7 +154,7 @@
 
 <!------------------------------------------------------------------------------------------------------------------->
 
-                <div class="duvida-item" id="duvida4"> <!---->
+                <div class="duvida-item" id="4"> <!---->
                     <hr class="hr-duvida1">
 
                     <div class="container">
@@ -181,7 +181,7 @@
 
 <!------------------------------------------------------------------------------------------------------------------->
 
-                <div class="duvida-item" id="duvida5"> <!---->
+                <div class="duvida-item" id="5"> <!---->
                     <hr class="hr-duvida1">
 
                     <div class="container">
@@ -208,7 +208,7 @@
                 
 <!------------------------------------------------------------------------------------------------------------------->
 
-                <div class="duvida-item" id="duvida6"> <!---->
+                <div class="duvida-item" id="6"> <!---->
                     <hr class="hr-duvida1">
 
                     <div class="container">
@@ -234,7 +234,7 @@
 
 <!------------------------------------------------------------------------------------------------------------------->
 
-                <div class="duvida-item" id="duvida7"> <!---->
+                <div class="duvida-item" id="7"> <!---->
                     <hr class="hr-duvida1">
 
                     <div class="container">
@@ -263,7 +263,7 @@
 
 <!------------------------------------------------------------------------------------------------------------------->
 
-                <div class="duvida-item" id="duvida8"> <!---->
+                <div class="duvida-item" id="8"> <!---->
                     <hr class="hr-duvida1">
 
                     <div class="container">
@@ -291,7 +291,7 @@
 
 <!------------------------------------------------------------------------------------------------------------------->
 
-                <div class="duvida-item" id="duvida9"> <!---->
+                <div class="duvida-item" id="9"> <!---->
                     <hr class="hr-duvida1">
 
                     <div class="container">
@@ -318,7 +318,7 @@
 
 <!------------------------------------------------------------------------------------------------------------------->
 
-                <div class="duvida-item" id="duvida10"> <!---->
+                <div class="duvida-item" id="10"> <!---->
                     <hr class="hr-duvida1">
 
                     <div class="container">
@@ -367,170 +367,36 @@
 
                 <div class="black">
 
-                    <p>SmartGateway Beyond The Security® <span id="date"></span></p>
+                    <p>SmartGateway Beyond The Security®<script src="./js/data.js"></script></p>
 
                 </div>
 
             </div>
 
         </footer>
-
-
         <script>
 
             $(document).ready(function(){
-                
-                var dateObject = document.getElementById("date");
-                if (dateObject) dateObject.innerHTML = y;
-                
-                $("#duvida1").on('click',function(){
+                $(".duvida-item").each(function(){
+                    $(this).on('click', function(){
 
-                    if ($("#duvida1msg").hasClass("hidden")) {
-                        $("#duvida1msg").removeClass("hidden");
-                        $("#i1").removeClass("fa-solid fa-caret-right");
-                        $("#i1").addClass("fa-solid fa-caret-down")
-                    }
-                    else {
-                        $("#duvida1msg").addClass("hidden");
-                        $("#i1").removeClass("fa-solid fa-caret-down")
-                        $("#i1").addClass("fa-solid fa-caret-right");
-                    }
+                        var idname =  $(this).attr('id')
 
-                })
+                        if ($("#duvida"+idname+"msg").hasClass("hidden")) {
+                            $("#duvida"+idname+"msg").removeClass("hidden");
+                            $("#i" + idname).removeClass("fa-solid fa-caret-right");
+                            $("#i" + idname).addClass("fa-solid fa-caret-down")
+                        }
+                        else {
+                            $("#duvida"+idname+"msg").addClass("hidden");
+                            $("#i" + idname).removeClass("fa-solid fa-caret-down")
+                            $("#i" + idname).addClass("fa-solid fa-caret-right");
+                        }
+                    })
 
-                $("#duvida2").on('click',function(){
-
-                    if ($("#duvida2msg").hasClass("hidden")) {
-                        $("#duvida2msg").removeClass("hidden");
-                        $("#i2").removeClass("fa-solid fa-caret-right");
-                        $("#i2").addClass("fa-solid fa-caret-down")
-                    }
-                    else {
-                        $("#duvida2msg").addClass("hidden");
-                        $("#i2").removeClass("fa-solid fa-caret-down")
-                        $("#i2").addClass("fa-solid fa-caret-right");
-                    }
 
                 })
 
-                $("#duvida3").on('click',function(){
-
-                    if ($("#duvida3msg").hasClass("hidden")) {
-                        $("#duvida3msg").removeClass("hidden");
-                        $("#i3").removeClass("fa-solid fa-caret-right");
-                        $("#i3").addClass("fa-solid fa-caret-down")
-                    }
-                    else {
-                        $("#duvida3msg").addClass("hidden");
-                        $("#i3").removeClass("fa-solid fa-caret-down")
-                        $("#i3").addClass("fa-solid fa-caret-right");
-                    }
-                })    
-
-                $("#duvida4").on('click',function(){
-
-                    if ($("#duvida4msg").hasClass("hidden")) {
-                        $("#duvida4msg").removeClass("hidden");
-                        $("#i4").removeClass("fa-solid fa-caret-right");
-                        $("#i4").addClass("fa-solid fa-caret-down")
-                    }
-                    else {
-                        $("#duvida4msg").addClass("hidden");
-                        $("#i4").removeClass("fa-solid fa-caret-down")
-                        $("#i4").addClass("fa-solid fa-caret-right");
-                    }
-
-                })
-
-                $("#duvida5").on('click',function(){
-
-                    if ($("#duvida5msg").hasClass("hidden")) {
-                        $("#duvida5msg").removeClass("hidden");
-                        $("#i5").removeClass("fa-solid fa-caret-right");
-                        $("#i5").addClass("fa-solid fa-caret-down")
-                    }
-                    else {
-                        $("#duvida5msg").addClass("hidden");
-                        $("#i5").removeClass("fa-solid fa-caret-down")
-                        $("#i5").addClass("fa-solid fa-caret-right");
-                    }
-
-                })
-
-                $("#duvida6").on('click',function(){
-
-                    if ($("#duvida6msg").hasClass("hidden")) {
-                        $("#duvida6msg").removeClass("hidden");
-                        $("#i6").removeClass("fa-solid fa-caret-right");
-                        $("#i6").addClass("fa-solid fa-caret-down")
-                    }
-                    else {
-                        $("#duvida6msg").addClass("hidden");
-                        $("#i6").removeClass("fa-solid fa-caret-down")
-                        $("#i6").addClass("fa-solid fa-caret-right");
-                    }
-
-                })
-
-                $("#duvida7").on('click',function(){
-
-                    if ($("#duvida7msg").hasClass("hidden")) {
-                        $("#duvida7msg").removeClass("hidden");
-                        $("#i7").removeClass("fa-solid fa-caret-right");
-                        $("#i7").addClass("fa-solid fa-caret-down")
-                    }
-                    else {
-                        $("#duvida7msg").addClass("hidden");
-                        $("#i7").removeClass("fa-solid fa-caret-down")
-                        $("#i7").addClass("fa-solid fa-caret-right");
-                    }
-
-                })
-
-                $("#duvida8").on('click',function(){
-
-                    if ($("#duvida8msg").hasClass("hidden")) {
-                        $("#duvida8msg").removeClass("hidden");
-                        $("#i8").removeClass("fa-solid fa-caret-right");
-                        $("#i8").addClass("fa-solid fa-caret-down")
-                    }
-                    else {
-                        $("#duvida8msg").addClass("hidden");
-                        $("#i8").removeClass("fa-solid fa-caret-down")
-                        $("#i8").addClass("fa-solid fa-caret-right");
-                    }
-
-                })
-
-                $("#duvida9").on('click',function(){
-
-                    if ($("#duvida9msg").hasClass("hidden")) {
-                        $("#duvida9msg").removeClass("hidden");
-                        $("#i9").removeClass("fa-solid fa-caret-right");
-                        $("#i9").addClass("fa-solid fa-caret-down")
-                    }
-                    else {
-                        $("#duvida9msg").addClass("hidden");
-                        $("#i9").removeClass("fa-solid fa-caret-down")
-                        $("#i9").addClass("fa-solid fa-caret-right");
-                    }
-
-                })
-
-                $("#duvida10").on('click',function(){
-
-                    if ($("#duvida10msg").hasClass("hidden")) {
-                        $("#duvida10msg").removeClass("hidden");
-                        $("#i10").removeClass("fa-solid fa-caret-right");
-                        $("#i10").addClass("fa-solid fa-caret-down")
-                    }
-                    else {
-                        $("#duvida10msg").addClass("hidden");
-                        $("#i10").removeClass("fa-solid fa-caret-down")
-                        $("#i10").addClass("fa-solid fa-caret-right");
-                    }
-
-                })
 
                 // Mobile
 
