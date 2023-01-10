@@ -8,6 +8,24 @@ html, body {
     width: auto;
 }
 
+.aviso {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(240, 69, 69);
+    color: black;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    border: black 1px solid
+}
+
+.aviso h2 {
+    padding-top: 10px;
+}
+
+.aviso p {
+    padding: 0 10px 10px 10px;
+}
+
 p, h1, h2 {
     margin: 0;
     padding: 0;
